@@ -1,0 +1,56 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.7rem 0;
+  background: #000000;
+}
+.search {
+  display: flex;
+  background: white;
+}
+.search > input {
+  border: none;
+  outline: none;
+  width: 30rem;
+  padding: 0 0.5rem;
+  font-size: 1.5rem;
+}
+nav > h1 {
+  margin: 0.8rem 0;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  font-size: 1.7rem;
+}
+.search > .icon {
+  color: grey;
+}
+.navButton {
+  text-align: center;
+  outline: none;
+  border: none;
+  background: white;
+  padding: 1.3rem 0.8rem;
+  cursor: pointer;
+  background: grey;
+}
+
+@media screen and (max-width: 630px) {
+  nav {
+    display: block;
+    text-align: center;
+  }
+  nav > h1 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  .search,
+  input {
+    margin: 0 0.7rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .search > input {
+    width: 100%;
+  }
+}

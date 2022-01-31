@@ -1,0 +1,91 @@
+.card {
+  width: 33%;
+  display: inline-block;
+  padding: 1.7rem 1rem;
+  transition: 0.5s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.list {
+  text-align: center;
+  margin: 1rem 0;
+}
+article {
+  display: grid;
+  padding: 1rem 2.5rem;
+  margin: 1rem 0.5rem;
+  width: 100%;
+  box-shadow: 0 4px 8px 2px rgba(77, 77, 77, 0.15);
+}
+.image {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.image > img {
+  padding: 1rem;
+  object-fit: contain;
+}
+
+.title {
+  text-align: center;
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.recipeButton {
+  outline: none;
+  background: white;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  color: green;
+  border: 1px solid green;
+  font-size: 1.1rem;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+}
+h2 {
+  text-align: center;
+  color: orange;
+}
+.card_title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+  margin: 1rem 0;
+  border-bottom: 1px solid #fff;
+}
+@media screen and (max-width: 1300px) {
+  .card {
+    display: inline-block;
+    width: 50%;
+  }
+  article {
+    display: grid;
+  }
+}
+@media screen and (max-width: 875px) {
+  .card {
+    display: inline-block;
+    width: 100%;
+  }
+  article {
+    display: grid;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .card {
+    padding: 1.7rem 5px;
+  }
+}
